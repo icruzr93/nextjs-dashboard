@@ -13,12 +13,7 @@ import {
 } from "@/app/ui/skeletons";
 
 export default async function Page() {
-  const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices,
-  } = await fetchCardData();
+  const { numberOfCustomers } = await fetchCardData();
 
   return (
     <main>
